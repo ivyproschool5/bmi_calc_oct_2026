@@ -1,6 +1,8 @@
 import streamlit as st
 from openai import OpenAI
 
+NVIDIA_API_KEY=st.secrets["NVIDIA_API_KEY"]  # Replace with your actual NVIDIA API key
+
 # Connect to NVIDIA (paste your key below)
 client = OpenAI(
 api_key=NVIDIA_API_KEY,
